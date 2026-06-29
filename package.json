@@ -23,6 +23,7 @@
     "typescript": "^5.6.3",
     "tsup": "^8.5.1",
     "@babel/core": "^7.25.2",
+    "@getrheo/contracts": "2.0.2",
     "@rheo/config": "workspace:*",
     "@react-native/babel-preset": "0.83.6",
     "@react-native/metro-config": "0.83.6",

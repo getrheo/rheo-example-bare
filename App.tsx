@@ -162,7 +162,7 @@ const AppContent = () => {
             style={inputStyle}
           />
           <TextInput
-            placeholder="API base URL"
+            placeholder="https://api.getrheo.io"
             placeholderTextColor="#71717a"
             value={config.apiBaseUrl}
             onChangeText={(v) => setConfig((c) => ({ ...c, apiBaseUrl: v }))}

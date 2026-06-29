@@ -60,6 +60,9 @@ importers:
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.6.0)
+      '@getrheo/contracts':
+        specifier: 2.0.2
+        version: 2.0.2
       '@react-native/babel-preset':
         specifier: 0.83.6
         version: 0.83.6(@babel/core@7.29.7)
@@ -1495,7 +1498,6 @@ packages:
     resolution: {integrity: sha512-2bF2HxbQT8Oz4eJwU1Ap8T/JbxsR34ZpDL/AAqi3Ui2k+WfwZQA4VVtcfoptX6jXwAq8XCea+tu0EIKeTeeztw==}
     dependencies:
       zod: 3.25.76
-    dev: false
 
   /@getrheo/flow-runtime@2.0.2:
     resolution: {integrity: sha512-3CJD85OvJ45lwMkqyJqx1YdIwC4rPN2QMKtZkBqAcXiI3P9CKR5289mrcZeEW1iwvXqSAwA1Go7hM7rCxgpAHA==}
@@ -5338,4 +5340,3 @@ packages:
 
   /zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
-    dev: false
