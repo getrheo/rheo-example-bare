@@ -1,8 +1,9 @@
 import type { RheoConfig } from '@getrheo/react-native-bare';
+import { RHEO_DEFAULT_SDK_API_BASE_URL } from '@getrheo/contracts/sdk';
 
 export const EXAMPLE_CONFIG_STORAGE_KEY = 'rheo.exampleConfig.v1';
 
-export const DEFAULT_API_URL = 'http://localhost:4000';
+export const DEFAULT_API_URL = RHEO_DEFAULT_SDK_API_BASE_URL;
 
 export type SavedConfig = {
   publishableKey: string;
