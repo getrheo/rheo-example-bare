@@ -1,13 +1,30 @@
 # rheo-example-bare
 
-Runnable example for [`@getrheo/react-native-bare`](https://www.npmjs.com/package/%40getrheo%2Freact-native-bare).
+Runnable **bare React Native** sample for [`@getrheo/react-native-bare`](https://www.npmjs.com/package/%40getrheo%2Freact-native-bare) — minimal host for `react-native-video`, in-app review, and required peers without Expo modules.
 
-**SDK repo:** [getrheo/rheo-react-native](https://github.com/getrheo/rheo-react-native)
+Not published to npm.
+
+## Quick start
 
 ```bash
-cp .env.example .env
+git clone https://github.com/getrheo/rheo-example-bare.git
+cd rheo-example-bare
 pnpm install
 pnpm start
+# separate terminal: pnpm ios   or   pnpm android
 ```
 
-[SDK docs](https://docs.getrheo.io/docs/developer-guide/sdk-bare-react-native)
+The config screen defaults to **`https://api.getrheo.io`**. Use `http://localhost:4000` when testing against a local API.
+
+## SDK repository
+
+[rheo-react-native](https://github.com/getrheo/rheo-react-native)
+
+## Development
+
+```bash
+pnpm install
+pnpm verify
+```
+
+[Documentation](https://docs.getrheo.io/docs/developer-guide/sdk-bare-react-native) · [CONTRIBUTING](./CONTRIBUTING.md) · [MIT](./LICENSE)
