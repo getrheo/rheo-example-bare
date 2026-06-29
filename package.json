@@ -15,13 +15,19 @@
     "verify": "node scripts/check-no-platform-contracts.mjs && pnpm lint && pnpm typecheck && pnpm test"
   },
   "devDependencies": {
+    "turbo": "^2.9.6",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.1",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "typescript-eslint": "^8.59.0",
+    "typescript": "^5.6.3",
+    "tsup": "^8.5.1",
     "@babel/core": "^7.25.2",
     "@rheo/config": "workspace:*",
     "@react-native/babel-preset": "0.83.6",
     "@react-native/metro-config": "0.83.6",
     "@react-native/typescript-config": "0.83.6",
     "@types/react": "^19.0.1",
-    "typescript": "^5.6.3",
     "vitest": "^3.2.6"
   },
   "main": "index.js",
