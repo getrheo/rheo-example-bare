@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@getrheo/react-native-bare':
-        specifier: 2.0.3
-        version: 2.0.3(@react-native-async-storage/async-storage@2.2.0)(lottie-react-native@7.3.8)(react-native-gesture-handler@2.30.1)(react-native-in-app-review@4.4.2)(react-native-linear-gradient@2.8.3)(react-native-permissions@5.6.0)(react-native-reanimated@4.2.3)(react-native-safe-area-context@5.6.2)(react-native-svg@15.15.4)(react-native-vector-icons@10.3.0)(react-native-video@6.19.2)(react-native@0.83.6)(react@19.2.0)
+        specifier: 2.1.0
+        version: 2.1.0(@react-native-async-storage/async-storage@2.2.0)(lottie-react-native@7.3.8)(react-native-gesture-handler@2.30.1)(react-native-in-app-review@4.4.2)(react-native-linear-gradient@2.8.3)(react-native-permissions@5.6.0)(react-native-reanimated@4.2.3)(react-native-safe-area-context@5.6.2)(react-native-svg@15.15.4)(react-native-vector-icons@10.3.0)(react-native-video@6.19.2)(react-native@0.83.6)(react@19.2.0)
       '@getrheo/react-native-core':
-        specifier: 2.0.3
-        version: 2.0.3(react-native@0.83.6)(react@19.2.0)
+        specifier: 2.1.0
+        version: 2.1.0(react-native@0.83.6)(react@19.2.0)
       '@react-native-async-storage/async-storage':
         specifier: 2.2.0
         version: 2.2.0(react-native@0.83.6)
@@ -61,8 +61,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.6.0)
       '@getrheo/contracts':
-        specifier: 2.0.3
-        version: 2.0.3
+        specifier: 2.1.0
+        version: 2.1.0
       '@react-native/babel-preset':
         specifier: 0.83.6
         version: 0.83.6(@babel/core@7.29.7)
@@ -1487,36 +1487,36 @@ packages:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  /@getrheo/attribution@2.0.3:
-    resolution: {integrity: sha512-a2ieO3x45YOKV4jKZ8w6vpXTEnmw8S63L4Ohcw2zVagtK1i40jhi6tSHt4CEo4k3jQF5iEAMxUHnW0uLAmOXvg==}
+  /@getrheo/attribution@2.1.0:
+    resolution: {integrity: sha512-KAfKzjpcXNzb78CtXl0gUVMbFlpyAASkVqy1EEvoHXS0tBPEyBTm9Yk9JkAC9HmjpCNE8eLhHQWTnb9Z/guy/w==}
     dependencies:
-      '@getrheo/contracts': 2.0.3
+      '@getrheo/contracts': 2.1.0
       zod: 3.25.76
     dev: false
 
-  /@getrheo/contracts@2.0.3:
-    resolution: {integrity: sha512-pKv4jmz6H9J0eAy7JydBt38ak7Fx+KO+ccCPSm5ruJQBVD9Ri2aQYj4z9tW1F9tKE2uFUxagwykiWapbSrGRQg==}
+  /@getrheo/contracts@2.1.0:
+    resolution: {integrity: sha512-Ju9QXPY0AVf2iD2XtJsQRukGJ+3jgVuLhnPW2g8O4WMOy1pxdtl9VS8MildgUwGybK+nAyVeODCHJWvbN2WlVg==}
     dependencies:
       zod: 3.25.76
 
-  /@getrheo/flow-runtime@2.0.3:
-    resolution: {integrity: sha512-RT6shbTUH5kyaaxjaFbgHZNWDyTCfxvquQRRRw5rJ8lr1mVQ0cqJ88J9LweZ8dzoA50dw4Jz1eirkCyzhVsbgg==}
+  /@getrheo/flow-runtime@2.1.0:
+    resolution: {integrity: sha512-Eqx0LuR9r6R/QFtm5MntKtFe9XS/gHq8PpDu1nsUvu6G00RcLiZ7wo1IIEBdC1lBqZ7mEI8z+OUYkM6LlmJDEw==}
     dependencies:
-      '@getrheo/contracts': 2.0.3
+      '@getrheo/contracts': 2.1.0
     dev: false
 
-  /@getrheo/flow-ui-state@2.0.3(react@19.2.0):
-    resolution: {integrity: sha512-zFYYZges4fiZ4VlQEIWGYKRaP4RaXjNY2kY3/sGyYtV5RxdjyI9YrOf7Je74Y7MpvVLFOKmlnRcfHD33OD5Gcg==}
+  /@getrheo/flow-ui-state@2.1.0(react@19.2.0):
+    resolution: {integrity: sha512-o8u3seIl3jHTtQ4qx650puOX1dpENOeqv31B8ax2sNWjh+/9+F/uw0bLNY7Bh+cM6n5x3vpWEIMX6Alg+6wTTQ==}
     peerDependencies:
       react: '>=18'
     dependencies:
-      '@getrheo/contracts': 2.0.3
-      '@getrheo/flow-runtime': 2.0.3
+      '@getrheo/contracts': 2.1.0
+      '@getrheo/flow-runtime': 2.1.0
       react: 19.2.0
     dev: false
 
-  /@getrheo/react-native-bare@2.0.3(@react-native-async-storage/async-storage@2.2.0)(lottie-react-native@7.3.8)(react-native-gesture-handler@2.30.1)(react-native-in-app-review@4.4.2)(react-native-linear-gradient@2.8.3)(react-native-permissions@5.6.0)(react-native-reanimated@4.2.3)(react-native-safe-area-context@5.6.2)(react-native-svg@15.15.4)(react-native-vector-icons@10.3.0)(react-native-video@6.19.2)(react-native@0.83.6)(react@19.2.0):
-    resolution: {integrity: sha512-vYcV1stYvqjRtrCzBcpHngppZYEeFKhu1pv+qWDy022liYwyyamkqI6jF0ixjhQU+vUta63gm+dsIxlo9E898g==}
+  /@getrheo/react-native-bare@2.1.0(@react-native-async-storage/async-storage@2.2.0)(lottie-react-native@7.3.8)(react-native-gesture-handler@2.30.1)(react-native-in-app-review@4.4.2)(react-native-linear-gradient@2.8.3)(react-native-permissions@5.6.0)(react-native-reanimated@4.2.3)(react-native-safe-area-context@5.6.2)(react-native-svg@15.15.4)(react-native-vector-icons@10.3.0)(react-native-video@6.19.2)(react-native@0.83.6)(react@19.2.0):
+    resolution: {integrity: sha512-PUcv9X0dXmRyB1DbrX//5FPdXsE4XqkOmdlCANwCfsK8mVPLVKHoh9TcXU0IsAUgoKaYvGRR9/OPtZh88B3a2A==}
     peerDependencies:
       '@react-native-async-storage/async-storage': '>=2'
       lottie-react-native: '*'
@@ -1532,7 +1532,7 @@ packages:
       react-native-vector-icons: '>=10'
       react-native-video: '*'
     dependencies:
-      '@getrheo/react-native-core': 2.0.3(react-native@0.83.6)(react@19.2.0)
+      '@getrheo/react-native-core': 2.1.0(react-native@0.83.6)(react@19.2.0)
       '@react-native-async-storage/async-storage': 2.2.0(react-native@0.83.6)
       lottie-react-native: 7.3.8(react-native@0.83.6)(react@19.2.0)
       react: 19.2.0
@@ -1548,17 +1548,17 @@ packages:
       react-native-video: 6.19.2(react-native@0.83.6)(react@19.2.0)
     dev: false
 
-  /@getrheo/react-native-core@2.0.3(react-native@0.83.6)(react@19.2.0):
-    resolution: {integrity: sha512-viY4PG4u2YHr2MkBqhYp7ycfGPOXntXCke0g+pWIw7nnQTp9+5qR+yZWyAA9C8SRMBr0CSHW5aGCvSvJRGEkyA==}
+  /@getrheo/react-native-core@2.1.0(react-native@0.83.6)(react@19.2.0):
+    resolution: {integrity: sha512-42ObumxKKU+PwBlhwhV2G4dO44/8AMWkEQkM1hU+3Rq/eDcVoY5PjkqLxALwNJkaleT5eiwvnhNUWJvM25m1PQ==}
     peerDependencies:
       react: '>=18'
       react-native: '>=0.79'
     dependencies:
-      '@getrheo/attribution': 2.0.3
-      '@getrheo/contracts': 2.0.3
-      '@getrheo/flow-runtime': 2.0.3
-      '@getrheo/flow-ui-state': 2.0.3(react@19.2.0)
-      '@getrheo/renderer-core': 2.0.3
+      '@getrheo/attribution': 2.1.0
+      '@getrheo/contracts': 2.1.0
+      '@getrheo/flow-runtime': 2.1.0
+      '@getrheo/flow-ui-state': 2.1.0(react@19.2.0)
+      '@getrheo/renderer-core': 2.1.0
       '@react-native-community/slider': 5.2.0
       react: 19.2.0
       react-native: 0.83.6(@babel/core@7.29.7)(@react-native/metro-config@0.83.6)(@types/react@19.2.17)(react@19.2.0)
@@ -1567,11 +1567,11 @@ packages:
       zod: 3.25.76
     dev: false
 
-  /@getrheo/renderer-core@2.0.3:
-    resolution: {integrity: sha512-+168PfF/rxCwQxrHWinZ5s8ve4QbZvmUppLWn3nV1bk2MGZ+U8SNvMvC2dASL2ywxVaoVq+epZPEDU06hAex6A==}
+  /@getrheo/renderer-core@2.1.0:
+    resolution: {integrity: sha512-eQ5LB38sPfnN6VmIG3HAnpwGC48PON84qPJHbnhgrbLyGCd2pIcNI0HwS0p8KLch9a+/QiByQv40pyEVBEcGaA==}
     dependencies:
-      '@getrheo/contracts': 2.0.3
-      '@getrheo/flow-runtime': 2.0.3
+      '@getrheo/contracts': 2.1.0
+      '@getrheo/flow-runtime': 2.1.0
     dev: false
 
   /@humanfs/core@0.19.2:
