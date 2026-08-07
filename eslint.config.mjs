@@ -13,6 +13,7 @@ export default [
         __dirname: 'readonly',
         exports: 'readonly',
         module: 'readonly',
+        process: 'readonly',
         require: 'readonly',
       },
     },
