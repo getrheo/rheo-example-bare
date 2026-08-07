@@ -21,6 +21,10 @@ import {
 } from './lib/exampleRheoConfig';
 import { ManifestPrefetchPanel } from './lib/manifestPrefetchPanel';
 import { RheoExampleShell, useExampleRheoShell } from './lib/rheoExampleShell';
+import {
+  getSuperwallIntegrationDetected,
+  prepareSuperwallForFlow,
+} from './lib/superwallBootstrap';
 
 const inputStyle = {
   backgroundColor: '#18181b',
@@ -92,11 +96,17 @@ const AppContent = () => {
   }, []);
 
   const canStart = canStartExampleConfig(config);
+  const superwallStatus = getSuperwallIntegrationDetected();
 
   const start = useCallback(async () => {
     if (!canStart) return;
     await AsyncStorage.setItem(EXAMPLE_CONFIG_STORAGE_KEY, JSON.stringify(config));
     syncFromSavedConfig(config);
+    try {
+      await prepareSuperwallForFlow(config.userId || 'example-user');
+    } catch (err) {
+      console.warn('[rheo-example-bare] Superwall bootstrap failed:', err);
+    }
     setRunning(true);
   }, [canStart, config, syncFromSavedConfig]);
 
@@ -145,6 +155,28 @@ const AppContent = () => {
             Uses `@getrheo/react-native-bare` (react-native-video + react-native-in-app-review).
             Generate `ios/` and `android/` with the React Native CLI before `run-ios` / `run-android`.
           </Text>
+          <View
+            style={{
+              gap: 6,
+              paddingVertical: 10,
+              paddingHorizontal: 12,
+              borderRadius: 10,
+              borderWidth: 1,
+              borderColor: '#27272a',
+              backgroundColor: '#18181b',
+            }}
+          >
+            <Text style={{ color: '#a1a1aa', fontSize: 12, fontWeight: '600' }}>
+              Native integrations (from .env at Metro start)
+            </Text>
+            <Text style={{ color: '#fafafa', fontSize: 14, fontWeight: '600' }}>
+              Superwall:{' '}
+              <Text style={{ color: superwallStatus.detected ? '#86efac' : '#a1a1aa', fontWeight: '700' }}>
+                {superwallStatus.detected ? 'Detected' : 'Not detected'}
+              </Text>
+            </Text>
+            <Text style={{ color: '#71717a', fontSize: 12 }}>{superwallStatus.hint}</Text>
+          </View>
           <TextInput
             placeholder="Publishable key"
             placeholderTextColor="#71717a"
