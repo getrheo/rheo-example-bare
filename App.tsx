@@ -12,7 +12,7 @@ import {
   View,
 } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import { Flow } from '@getrheo/react-native-bare';
+import { ExampleChannelContent } from './lib/exampleChannelContent';
 import {
   canStartExampleConfig,
   DEFAULT_API_URL,
@@ -129,10 +129,12 @@ const AppContent = () => {
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: '#0a0a0a' }} edges={hideNav ? undefined : ['top']}>
         {!hideNav ? <FlowHostHeader onBack={stopFlow} /> : null}
-        <Flow
+        <ExampleChannelContent
           channelId={channelId}
-          onFlowCompleted={stopFlow}
-          onFlowAbandoned={stopFlow}
+          flowProps={{
+            onFlowCompleted: stopFlow,
+            onFlowAbandoned: stopFlow,
+          }}
         />
       </SafeAreaView>
     );
@@ -253,7 +255,7 @@ const AppContent = () => {
               marginTop: 8,
             }}
           >
-            <Text style={{ color: canStart ? '#fff' : '#a1a1aa', fontWeight: '600' }}>Start flow</Text>
+            <Text style={{ color: canStart ? '#fff' : '#a1a1aa', fontWeight: '600' }}>Start channel</Text>
           </Pressable>
         </ScrollView>
       </KeyboardAvoidingView>
